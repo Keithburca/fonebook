@@ -1,0 +1,32 @@
+#option {
+    color: white;
+}
+.newcontact {
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    color: rgb(118, 43, 0);
+}
+
+.btn {
+    font-size: small;
+}
+
+.panel {
+    background: rgb(248, 238, 206);
+    font-weight: 600;
+}
+
+.panel-heading {
+    background-image: url(https://www.worldtribune.org/wp-content/uploads/2020/07/diversity_people_GettyImages-1245226116.jpg);
+    color: white;
+}
+
+.alert {
+    font-family: 'Open Sans Condensed';
+    font-size: smaller;
+    text-align: right;
+    background-color: rgb(199, 98, 62);
+    color: white;
+    font-weight: 100;
+}
+

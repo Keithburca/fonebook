@@ -1,0 +1,47 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+<div class = "contact-page col-xs-12 max-width">
+    <div class= "panel panel-danger">
+        <div class="panel-heading">
+            New Contact
+        </div>
+        <div *ngIf="alert" class="alert alert-success alert-dismissible">
+            <a (click)="closeAlert()" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Success!</strong> {{alertMessage}}
+        </div>
+        <div *ngIf="alertEdit" class="alert alert-success alert-dismissible">
+            <a (click)="closeAlert()" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Reminder!</strong> You are currently editing an existing contact. Click here to close and make a new contact.
+        </div>
+        <form [formGroup]="contactForm" (ngSubmit)="collectInfo()"
+        class="panel-body maxwidth">
+            <div class="col-xs-10 newcontact">
+                <div class="form-group">
+                    <label  for="Name">Name:</label>
+                    <input type="text" class="form-control" formControlName= "name"  id="name" required #nameInput >
+                </div>
+                <div class="form-group">
+                <label for="email" >Email address:</label>
+                <input formControlName= "email" type="email" required class="form-control" id="email" #emailInput>
+                </div>
+                <div class="form-group">
+                <label for="contact" >Contact: </label>
+                <input formControlName= "phone" type="text" class="form-control" id="contact" required #phoneInput>
+                </div>
+                <div class = "btn-group"> 
+                <button type="submit" class="btn btn-warning" routerLink="/contact-list/0" *ngIf="!newButton" [disabled]="newButton" (click)="addNew()">Submit</button>
+                <button *ngIf="!updateButton" type="submit" class="btn btn-warning" [disabled]="updateButton"  routerLink="/contact-list/0" (click)="updateFields()">Done</button>
+                </div> 
+            </div>
+        </form>
+    </div>
+</div>
+<div class="col-xs-12 text-center">
+       <app-contact-list (showAlert)='showEditAlert()'></app-contact-list>
+</div>
+  
+
+
+    

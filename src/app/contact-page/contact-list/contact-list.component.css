@@ -1,0 +1,25 @@
+.tablelist {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    background-color: red;
+}
+
+.overall-list {
+    font-family: 'Roboto';
+    background-color: rgb(251, 238, 225);
+}
+
+.btn {
+    font-size: small;
+    font-family: 'Open Sans Condensed';
+}
+
+.theader {
+    background-color: rgb(52, 52, 52);
+    color: white;
+}
+
+.wholeet {
+    background-color: rgb(251, 238, 225);
+}
+

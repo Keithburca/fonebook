@@ -1,0 +1,12 @@
+<div class="col-xs-10">
+    <div class="panel panel-primary">
+        <div class="panel-heading"> Contact Information </div>
+        <div class="panel-body" *ngFor="let user of users | slice:page:pageCut, index as i">
+            <h3 class="nameee"> {{ user.name }} </h3>
+            <h4 class="emailad"> Email address: {{ user.email }} </h4>
+            <h4 class="contactad"> Contact Number: {{ user.phone }}</h4>
+    
+            <button type="submit" class= "btn btn-warning" routerLink="/contact-list/0" (click)="returnList()" >Back to List</button>
+        </div>
+    </div>
+    </div>

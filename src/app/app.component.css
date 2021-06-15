@@ -1,0 +1,7 @@
+.navbar {
+    background-image: linear-gradient(to right, rgb(90, 4, 4), rgb(117, 80, 0))
+}
+
+.navbar-brand {
+    font-family: "Poppins";
+}

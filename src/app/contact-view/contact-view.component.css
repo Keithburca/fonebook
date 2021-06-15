@@ -1,0 +1,29 @@
+.panel {
+    background: rgb(248, 238, 206);
+       }
+
+.panel-heading {
+    background-image: url(https://www.worldtribune.org/wp-content/uploads/2020/07/diversity_people_GettyImages-1245226116.jpg);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.btn {
+    font-size: small;
+}
+
+.nameee {
+    font-family: 'Poppins', sans-serif;
+}
+
+.emailad {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.contactad {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;    
+}

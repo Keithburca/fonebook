@@ -1,0 +1,51 @@
+<div class="wholeet">
+    <div class="theader">
+    <hr>
+    <strong class=tablelist>
+        <div class="col-xs-1">
+            ID
+        </div>
+        <div class="col-xs-3">
+            Name
+        </div>
+        <div class="col-xs-3">
+            Email
+        </div>
+        <div class="col-xs-2">
+            Contact
+        </div>
+        <div class="col xs-3" id="option">
+            Options
+        </div>
+    </strong>
+    <hr>
+    </div>
+    <div class="overall-list">
+        <div class="row" *ngFor="let user of users, index as i">
+            <div class="col-xs-1">
+                {{ user.id }}
+            </div>
+            <div class="col-xs-3">
+                {{user.name}}
+            </div>
+            <div class="col-xs-3">
+                {{user.email}}
+            </div>
+            <div class="col-xs-2">
+                {{user.phone}}
+            </div>
+            <div class="col xs-3">
+                <div class="btn btn-group">
+                    <button routerLink="/contact-details/{{ user.id }}" class="btn btn-success">View</button>
+                    <button routerLink="/contact-list/{{ user.id }}" (click)="updateContact(i,user)" class="btn btn-primary">Edit</button>
+                    <button type = "submit" (click)="deleteContact(i,user)" routerLink="/contact-list/0" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+    
